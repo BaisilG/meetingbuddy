@@ -67,7 +67,6 @@ architecture.md
 agent-instructions.md
 prompt.md
 setup.md
-demo-transcript.md
 submission-draft.md
 technical-notes.md
 screenshots/
