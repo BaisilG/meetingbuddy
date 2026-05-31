@@ -95,3 +95,8 @@ The working MVP demonstrates the core Operative-track pattern:
 - Outlook calendar availability lookup for follow-up scheduling.
 - Word `.docx` minutes generation from a formal template.
 - Sentiment and concern detection for stakeholder meetings.
+
+
+
+## Demo Video
+Watch the demo: https://www.youtube.com/watch?v=sCpKJi-AhSc

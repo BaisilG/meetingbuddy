@@ -1,0 +1,103 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="MeetingBuddy Architecture" id="meetingbuddy-architecture">
+    <mxGraphModel dx="1664" dy="921" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=28;fontStyle=1;fontColor=#111827;" value="MeetingBuddy Architecture" vertex="1">
+          <mxGeometry height="50" width="500" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="teams" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;fontSize=15;fontStyle=1;" value="Microsoft Teams Meeting" vertex="1">
+          <mxGeometry height="70" width="210" x="60" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="transcript" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f9ff;strokeColor=#0284c7;fontSize=14;" value="Transcript Available&lt;br&gt;After Meeting Ends" vertex="1">
+          <mxGeometry height="70" width="220" x="330" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="demo" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#f97316;fontSize=14;" value="Hackathon Demo&lt;br&gt;User Pastes Transcript" vertex="1">
+          <mxGeometry height="70" width="230" x="610" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="prod" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ecfdf5;strokeColor=#10b981;fontSize=14;" value="Production Design&lt;br&gt;Graph / Teams Transcript Trigger" vertex="1">
+          <mxGeometry height="70" width="230" x="610" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="agent" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#7c3aed;fontSize=16;fontStyle=1;" value="MeetingBuddy&lt;br&gt;Copilot Studio Agent" vertex="1">
+          <mxGeometry height="80" width="240" x="900" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="topic" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f3ff;strokeColor=#7c3aed;fontSize=14;" value="Process Meeting Transcript Topic" vertex="1">
+          <mxGeometry height="65" width="240" x="900" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="prompt" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#faf5ff;strokeColor=#9333ea;fontSize=14;" value="Analyse Meeting Transcript Prompt&lt;br&gt;Type, template, folder, tasks, email, follow-up" vertex="1">
+          <mxGeometry height="80" width="300" x="870" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="review" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#d97706;fontSize=14;fontStyle=1;" value="Organiser Review&lt;br&gt;Confirm / Cancel" vertex="1">
+          <mxGeometry height="120" width="190" x="925" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="flow" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontSize=16;fontStyle=1;" value="Execute MeetingBuddy Follow Up&lt;br&gt;Agent Flow" vertex="1">
+          <mxGeometry height="75" width="320" x="860" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="sharepoint" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;fontSize=14;" value="SharePoint&lt;br&gt;Meeting Minutes File" vertex="1">
+          <mxGeometry height="70" width="210" x="360" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="outlook" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontSize=14;" value="Outlook&lt;br&gt;Follow-Up Email" vertex="1">
+          <mxGeometry height="70" width="210" x="650" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="planner" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fae8ff;strokeColor=#a21caf;fontSize=14;" value="Planner&lt;br&gt;Follow-Up Task + Details" vertex="1">
+          <mxGeometry height="70" width="230" x="325" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="teamsPost" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#7c3aed;fontSize=14;" value="Teams&lt;br&gt;Acknowledgement Post" vertex="1">
+          <mxGeometry height="70" width="230" x="350" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="calendar" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ecfdf5;strokeColor=#059669;fontSize=14;" value="Outlook Calendar&lt;br&gt;Follow-Up Invite if Requested" vertex="1">
+          <mxGeometry height="70" width="250" x="360" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="final" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f9fafb;strokeColor=#6b7280;fontSize=14;fontStyle=1;" value="Completion Message&lt;br&gt;Returned to Organiser" vertex="1">
+          <mxGeometry height="75" width="240" x="900" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="teams" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#374151;" target="transcript">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="transcript" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#374151;" target="demo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="transcript" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#374151;" target="prod">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="demo" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#374151;" target="agent">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="prod" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#374151;" target="agent">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="agent" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#7c3aed;" target="topic">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="topic" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#7c3aed;" target="prompt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="prompt" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#7c3aed;" target="review">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="review" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#16a34a;fontColor=#16a34a;fontStyle=1;" target="flow" value="Confirm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="flow" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#16a34a;" target="sharepoint">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="flow" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#16a34a;" target="outlook">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="flow" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#16a34a;" target="planner">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="flow" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#16a34a;" target="teamsPost">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="flow" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#16a34a;" target="calendar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="flow" style="endArrow=block;html=1;strokeWidth=2;strokeColor=#6b7280;" target="final">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
